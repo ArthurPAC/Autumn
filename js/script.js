@@ -824,6 +824,7 @@ yesBtn.addEventListener('click', () => {
   if (answered) return;
 
   answered = true;
+  choices.classList.add('celebrating');
 
   document.querySelector('#answer').textContent =
     respostaSim;
