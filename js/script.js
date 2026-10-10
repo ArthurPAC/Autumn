@@ -55,7 +55,7 @@ const lembrancas = [
   {foto:'img/foto45.png', formato:'quadrado', mensagem:'Heh, look at you 🤗'},
   {foto:'img/foto46.png', formato:'quadrado', mensagem:'And look at ussss <3 (look at our powerful steeds, hehe)'},
   {foto:'img/foto47.png', formato:'paisagem', mensagem:'GAH DAYUM UR TALL'},
-  {foto: 'https://media1.tenor.com/m/xfauNZRfX5MAAAAd/funny-cat-bit-video.gif', formato: 'retrato', mensagem: 'BITE'},
+  {foto: 'https://media1.tenor.com/m/xfauNZRfX5MAAAAd/funny-cat-bit-video.gif', formato: 'retrato', mensagem: 'BITE >;3'},
   {foto:'img/foto48.png', formato:'paisagem', mensagem:'Of course I didnt forget our best photos :>'},
   {foto:'img/foto49.png', formato:'paisagem', mensagem:'I loved the angel hug btw 🤗'},
   {foto:'img/foto50.png', formato:'paisagem', mensagem:'So perfect...'},
