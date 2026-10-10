@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#e8d8bd" />
+  <title>An Autumn Letter For You 🍂</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <script src="js/fireworks.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div id="bg-sparkles"></div>
+  </div>
+  <div class="leaf-rain" aria-hidden="true">
+    <div class="leaf-zone leaf-zone-left" id="left-leaf-zone"></div>
+    <div class="leaf-zone leaf-zone-right" id="right-leaf-zone"></div>
+  </div>
+
+  <div class="leaf-frame leaf-frame-left" aria-hidden="true"></div>
+  <div class="leaf-frame leaf-frame-right" aria-hidden="true"></div>
+
+  <button class="motion-toggle" id="toggle-motion" type="button" aria-pressed="false" title="Pause animations and moving interactions">Pause motion</button>
+
+  <main>
+    <section class="intro" id="intro">
+      <p class="eyebrow">Hello</p>
+      <h1>Would you look at this letter?</h1>
+      <p>From me, to you.</p>
+      <button class="envelope" id="open-letter" type="button" aria-label="Open the letter">
+        <span class="envelope-flap"></span>
+        <span class="envelope-body"></span>
+        <span class="seal">♥</span>
+      </button>
+    </section>
+
+    <article class="letter" id="letter" aria-hidden="true">
+      <div class="letter-inner">
+        <div class="letter-heading">
+          <svg class="letter-ornament" viewBox="0 0 400 64" aria-hidden="true" focusable="false">
+            <defs>
+              <g id="letter-ornament-sprig">
+                <path class="ornament-stem" d="M14 34H48 M50 35C82 20 118 45 166 31 M158 32H179" />
+                <g class="ornament-leaves">
+                  <path d="M70 29C59 29 57 19 58 16C68 16 73 23 70 29Z" />
+                  <path d="M86 29C79 35 78 42 85 46C94 43 96 35 86 29Z" />
+                  <path d="M108 32C97 29 96 21 101 15C111 18 115 26 108 32Z" />
+                  <path d="M129 34C123 41 128 48 136 49C142 41 137 36 129 34Z" />
+                  <path d="M150 33C143 28 144 21 153 17C159 25 158 30 150 33Z" />
+                </g>
+                <path class="ornament-veins" d="M70 29L61 19 M86 29L85 42 M108 32L102 19 M129 34L135 45 M150 33L153 21" />
+                <circle class="ornament-detail" cx="10" cy="34" r="1.3" />
+                <path class="ornament-detail" d="M182 30L184 32L182 34L180 32Z" />
+              </g>
+              <g id="letter-ornament-botanical">
+                <use href="#letter-ornament-sprig" />
+                <use href="#letter-ornament-sprig" transform="translate(400 0) scale(-1 1)" />
+              </g>
+            </defs>
+            <use href="#letter-ornament-botanical" />
+            <path class="ornament-star" d="M200 18Q202 29 210 32Q202 35 200 46Q198 35 190 32Q198 29 200 18Z" />
+          </svg>
+          <h2>Well</h2>
+          <p>We've known each other for a little while by now, - not that much, to be honest - but I think now it's the time.</p>
+          <h1>I'd like to show you some memories,</h1>
+          <p>I hope you can remember some of them. This is a piece of our history.</p>
+        </div>
+
+        <div id="memories" class="memories"></div>
+
+        <section class="ending" aria-label="Final question">
+          <svg class="letter-ornament letter-ornament--closing" viewBox="0 0 400 64" aria-hidden="true" focusable="false">
+            <use href="#letter-ornament-botanical" transform="rotate(180 200 32)" />
+            <path class="ornament-star" d="M200 18Q202 29 210 32Q202 35 200 46Q198 35 190 32Q198 29 200 18Z" />
+          </svg>
+          <h2>We had a lot of fun in these past three months, at the start, I didn't even imagine we could be like this, for some time, I didn't realize I felt something for you, then, I realized, but I - for a long while - didn't know what I felt yet. Now, I do, I love you even if we are 9.993km away from each other, I love your voice, your coughs, your face, your hair, your own special way, everything about you.</h2>
+          <br>
+          <h2>And I know it will be hard for me to go there, or you to come here, and specially hard to we be together permanently somewhere, but I am willing to take this risk, I want that, someday, I can make another letter like this one, but with photos of us, together, in the real life. It's going to be - probably - one of the hardest things in my life, but I am going to do my best, I am going to work hard, I want to become a better man for you.<h2>
+          <br>
+          <h2>So, I have a question.</h2>
+          <h2 class="magic-text big" id="proposal-text">Will you be my girlfriend?</h2>
+          <p>And make our history much bigger than just three months? </p>
+
+          <div class="choices" id="choices">
+            <button class="choice-text yes magic-text" id="yes" type="button">Yes</button>
+            <button class="choice-text no magic-text" id="no" type="button">No</button>
+          </div>
+
+          <p id="answer" class="answer" aria-live="polite"></p>
+        </section>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

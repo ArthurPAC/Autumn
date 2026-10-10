@@ -1,0 +1,45 @@
+AUTUMN LETTER WEBSITE - HOW TO EDIT
+
+1) WHERE TO CHANGE THE PHOTOS
+- Put your photos inside the folder: img/
+- Open the file: js/script.js
+- Find: const lembrancas = [ ... ]
+- Replace each example file name with your own file.
+
+Example:
+{foto:'img/myphoto1.jpg', formato:'retrato', mensagem:'A short message here.'}
+
+Available formats:
+- quadrado   = square
+- retrato    = portrait
+- paisagem   = landscape
+- circulo    = circle
+
+2) WHERE TO CHANGE THE MESSAGES
+Still in js/script.js:
+- Each photo block has mensagem:'...'
+- You can duplicate, delete or change those lines.
+
+3) FINAL QUESTION / YES TEXT
+Still in js/script.js, edit:
+const textoDoPedido = 'Will you be my girlfriend?';
+const respostaSim = 'You just made me the happiest person alive! 💙🍂';
+
+4) SIDE LEAF DECORATION
+The side borders now use these files in img/:
+- leaf-garland-left.png
+- leaf-garland-right.png
+
+The falling leaves use:
+- falling-leaf.png
+
+5) FAVICON
+The tab icon is:
+- img/favicon.svg
+
+6) GITHUB PAGES
+Upload the whole project to the root of your repository.
+Then open GitHub -> Settings -> Pages -> Deploy from branch -> main -> /(root).
+
+7) IMPORTANT
+The falling leaves are restricted to the left and right background zones, so they do not cross the center where the letter is.
